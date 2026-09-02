@@ -351,8 +351,10 @@ ul {
 .hero {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    padding-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
 }
 
 .hero-grid {
@@ -559,6 +561,42 @@ ul {
     100% {
         transform: translateY(-15px);
     }
+}
+
+/* Running Line Marquee */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(37, 99, 235, 0.05);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.marquee-label {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .scroll-down {
