@@ -259,7 +259,7 @@ ul {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
@@ -275,6 +275,7 @@ ul {
     font-weight: 800;
     color: var(--text-main);
     letter-spacing: -0.5px;
+    white-space: nowrap;
 }
 
 .logo-dot {
@@ -288,7 +289,7 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -297,6 +298,7 @@ ul {
     font-size: 0.95rem;
     color: var(--text-muted);
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-links a:hover,
