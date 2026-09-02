@@ -55,41 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Number Counter Animation for Stats
-    const counters = document.querySelectorAll('.stat-number');
-    const speed = 200; // lower is slower
-
-    const startCounters = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-                    
-                    // Lower inc to slow and higher to fast
-                    const inc = target / speed;
-
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + inc);
-                        setTimeout(updateCount, 20);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-                updateCount();
-                observer.unobserve(counter); // only animate once
-            }
-        });
-    };
-
-    const counterObserver = new IntersectionObserver(startCounters, {
-        threshold: 0.5
-    });
-
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
 
     // 4. Scroll Animations (Intersection Observer)
     const observeElements = document.querySelectorAll('.observe');
