@@ -1067,7 +1067,7 @@ ul {
 /* Ongoing Research Section */
 .ongoing-image-container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 850px;
     margin: 0 auto;
     border-radius: var(--radius-lg);
     overflow: hidden;
