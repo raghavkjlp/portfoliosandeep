@@ -39,8 +39,6 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
-    overflow-x: hidden;
-    width: 100%;
 }
 
 body {
@@ -49,7 +47,6 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
-    width: 100%;
     position: relative;
 }
 
@@ -1534,8 +1531,7 @@ ul {
 
     .image-container {
         margin: 0 auto;
-        width: 100%;
-        max-width: 350px;
+        width: 350px;
         height: 420px;
     }
 }
@@ -1575,21 +1571,5 @@ ul {
 
     .stat-number {
         font-size: 2.5rem;
-    }
-    
-    .gallery-item img {
-        height: 220px;
-    }
-    
-    .marquee-content {
-        font-size: 1.1rem;
-    }
-
-    .badge-top {
-        right: 0px;
-    }
-    
-    .badge-bottom {
-        left: 0px;
     }
 }
