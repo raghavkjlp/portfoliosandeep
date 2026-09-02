@@ -595,8 +595,13 @@ ul {
 }
 
 @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .scroll-down {
@@ -955,6 +960,7 @@ ul {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 .patent-card {
     background: white;
     border-radius: var(--radius-md);
@@ -967,15 +973,18 @@ ul {
     border-left: 6px solid #fbbf24;
     transition: var(--transition);
 }
+
 .patent-card:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-3px);
 }
+
 .patent-left {
     display: flex;
     align-items: center;
     gap: 24px;
 }
+
 .patent-icon {
     width: 60px;
     height: 60px;
@@ -988,6 +997,7 @@ ul {
     color: #f59e0b;
     flex-shrink: 0;
 }
+
 .patent-details h3 {
     font-size: 1.25rem;
     font-weight: 700;
@@ -995,6 +1005,7 @@ ul {
     margin-bottom: 12px;
     line-height: 1.4;
 }
+
 .patent-year {
     display: inline-block;
     background: #f1f5f9;
@@ -1004,6 +1015,7 @@ ul {
     padding: 6px 16px;
     border-radius: 20px;
 }
+
 .patent-link {
     background: #fffbeb;
     color: #f59e0b;
@@ -1017,6 +1029,7 @@ ul {
     transition: var(--transition);
     white-space: nowrap;
 }
+
 .patent-link:hover {
     background: #fef3c7;
     color: #d97706;
@@ -1372,13 +1385,6 @@ ul {
     }
 }
 
-color: var(--text-light);
-font-size: 0.9rem;
-margin-top: 32px;
-padding-top: 32px;
-border-top: 1px solid var(--border);
-width: 100%;
-}
 
 /* Animations Classes */
 .observe {
