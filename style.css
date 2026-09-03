@@ -1629,3 +1629,54 @@ ul {
         font-size: 2.5rem;
     }
 }
+/* Students Section */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+.student-card {
+    background: var(--bg-alt);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
+}
+
+.student-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.student-card:hover img {
+    transform: scale(1.05);
+}
+
+.student-card h3 {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.student-card .student-title {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
